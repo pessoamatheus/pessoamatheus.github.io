@@ -29,7 +29,7 @@ export default function Home() {
       <section className="welcome-section">
         <div className="welcome-copy">
           <p className="section-kicker">Welcome</p>
-          <h2>About</h2>
+          <h2>Welcome!</h2>
           <p className="welcome-lede">
             I&apos;m currently a PhD candidate at McGill University, working with
             DNA electrokinetic confinement. This is a novel on-chip
