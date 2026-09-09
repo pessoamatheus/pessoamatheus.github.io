@@ -19,32 +19,7 @@ export default function MicroscopyPage() {
           them.
         </p>
       </section>
-
-      <article className="microscopy-entry microscopy-entry-compact">
-        <div className="microscopy-copy">
-          <p className="microscopy-number">01</p>
-          <div>
-            <p className="microscopy-kind">Fluorescence microscopy</p>
-            <h2>Capture and release</h2>
-            <p>
-              T4-DNA molecules are recruited from bulk solution and confined
-              at patterned cavities when the field is applied. Removing the
-              field returns the molecules to free diffusion.
-            </p>
-          </div>
-        </div>
-        <figure className="microscopy-figure capture-figure">
-          <img
-            src="/assets/microscopy/capture-release.png"
-            alt="Fluorescence microscopy frame showing T4-DNA molecules during capture and release"
-          />
-          <figcaption>
-            T4-DNA capture and release under reversible electrokinetic
-            confinement.
-          </figcaption>
-        </figure>
-      </article>
-
+      
       <article className="microscopy-entry">
         <div className="microscopy-copy">
           <p className="microscopy-number">02</p>
