@@ -39,8 +39,8 @@ export default function ResearchPage() {
           </dl>
         </div>
         <figure className="research-image wide-figure">
-          <img src="/assets/recon-device.jpg" alt="Three-stage schematic of free, confined, and released DNA in the RECON nanofluidic device" />
-          <figcaption>Capture, confinement, and release in the RECON device.</figcaption>
+          <img src="/assets/recon-schematic.png" alt="Schematic of the RECON device with parallel electrodes, patterned nanocavities, and an applied electric field" />
+          <figcaption>RECON device geometry and electrically defined nanocavity confinement.</figcaption>
         </figure>
       </article>
 
@@ -67,9 +67,9 @@ export default function ResearchPage() {
             <li>Stochastic transitions between nanocavities</li>
           </ul>
         </div>
-        <figure className="research-image">
-          <img src="/assets/recon-experiment.jpg" alt="Experimental fluorescence micrographs of DNA in nanocavities under reversible electrokinetic confinement" />
-          <figcaption>Single DNA molecules confined in lithographic cavities.</figcaption>
+        <figure className="research-image wide-figure">
+          <img src="/assets/driven-polymer-conformations.webp" alt="Comparison of constant, stochastic, and amplitude-modulated electrical drives with DNA conformations and dynamic response measurements" />
+          <figcaption>Polymer conformations and dynamics under constant, stochastic, and periodically modulated drives.</figcaption>
         </figure>
       </article>
 
