@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SiteShell } from "@/components/site-shell";
 
 export const metadata: Metadata = {
-  title: "Microscopy",
+  title: "Experiments",
   description:
     "Fluorescence microscopy experiments and nanofabrication images from Matheus Pessôa's single-molecule nanofluidics research.",
 };
