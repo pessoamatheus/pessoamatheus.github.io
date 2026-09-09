@@ -23,10 +23,69 @@ const selectedWork = [
   },
 ];
 
+const homeVideos = [
+  {
+    title: "Constant voltage",
+    src: "/assets/experiments/constant-voltage.mp4",
+  },
+  {
+    title: "Noise",
+    src: "/assets/experiments/noise-driven-confinement.mp4",
+  },
+  {
+    title: "Amplitude modulation",
+    src: "/assets/experiments/amplitude-modulation.mp4",
+  },
+  {
+    title: "Stochastic landscape",
+    src: "/assets/experiments/stochastic-potential-landscape.mp4",
+  },
+];
+
+const homeRoutes = [
+  { label: "Research", href: "/research" },
+  { label: "Publications", href: "/publications" },
+  { label: "Experiments", href: "/experiments" },
+  { label: "Media", href: "/media" },
+  { label: "About", href: "/about" },
+];
+
 export default function Home() {
   return (
-    <SiteShell active="Home">
-      <section className="welcome-section">
+    <SiteShell
+      active="Home"
+      showHeader={false}
+      prelude={
+        <div className="home-front">
+          <header className="home-opening">
+            <h1>Matheus Pessôa</h1>
+          </header>
+
+          <section className="home-showcase" aria-label="Selected experiments">
+            <div className="home-video-grid">
+              {homeVideos.map((video) => (
+                <figure className="home-video-card" key={video.title}>
+                  <video autoPlay loop muted playsInline preload="metadata">
+                    <source src={video.src} type="video/mp4" />
+                    Your browser does not support embedded video.
+                  </video>
+                  <figcaption>{video.title}</figcaption>
+                </figure>
+              ))}
+            </div>
+
+            <nav className="home-page-index" aria-label="Explore the website">
+              {homeRoutes.map((route) => (
+                <Link href={route.href} key={route.label}>
+                  {route.label}
+                </Link>
+              ))}
+            </nav>
+          </section>
+        </div>
+      }
+    >
+      <section className="welcome-section" id="profile">
         <div className="welcome-copy">
           <p className="section-kicker">Welcome</p>
           <h2>Matheus Pessôa</h2>
