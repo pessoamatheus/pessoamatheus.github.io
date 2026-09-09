@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <SiteShell active="About">
-      <PageIntro index="04" title="About">
+      <PageIntro index="05" title="About">
         Physicist, experimentalist, and nanofluidics researcher based in Montréal.
       </PageIntro>
 

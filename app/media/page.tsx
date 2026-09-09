@@ -31,94 +31,12 @@ const coverage = [
 export default function MediaPage() {
   return (
     <SiteShell active="Media">
-      <PageIntro index="03" title="Media">
+      <PageIntro index="04" title="Media">
         Research images and reporting on reversible control of DNA in
         nanofluidic devices.
       </PageIntro>
 
-      <section className="media-explainer ruled-section">
-        <div>
-          <p className="section-kicker">RECON in brief</p>
-          <h2>A switchable landscape for DNA</h2>
-        </div>
-        <div>
-          <p>
-            A DNA molecule normally wanders through solution by Brownian motion.
-            In RECON, an applied AC field concentrates the molecule inside a
-            patterned nanowell. The field can be tuned continuously or turned
-            off entirely, allowing the same molecule to be captured, reshaped,
-            observed, and released.
-          </p>
-          <p>
-            The central idea is simple: confinement becomes a time-dependent
-            experimental variable rather than a permanent piece of geometry.
-          </p>
-        </div>
-      </section>
-
-      <section className="media-gallery ruled-section" aria-labelledby="molecular-dynamics">
-        <div className="section-heading-row">
-          <div>
-            <p className="section-kicker">Original microscopy GIFs</p>
-            <h2 id="molecular-dynamics">Molecular dynamics</h2>
-          </div>
-        </div>
-        <div className="motion-grid">
-          <figure className="motion-figure motion-figure-wide">
-            <img
-              src="/assets/dna-tension-dynamics.gif"
-              alt="Animated fluorescence microscopy of T4-DNA confined between pairs of nanocavities under increasing tension"
-            />
-            <figcaption>
-              <strong>Increasing applied tension.</strong> T4-DNA is confined
-              between two nanocavities. Moving from left to right, higher
-              current holds the molecular “rope” progressively tighter.
-            </figcaption>
-          </figure>
-          <figure className="motion-figure">
-            <img
-              src="/assets/stochastic-dna-transitions.gif"
-              alt="Animated fluorescence microscopy and plots of DNA switching between nanocavities under Gaussian-noise driving"
-            />
-            <figcaption>
-              <strong>Noise-driven transitions.</strong> A Gaussian-noise-like
-              waveform drives a Brownian DNA molecule between neighboring
-              cavities.
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section className="media-gallery ruled-section" aria-labelledby="research-images">
-        <div className="section-heading-row">
-          <div>
-            <p className="section-kicker">Research images</p>
-            <h2 id="research-images">Inside the experiment</h2>
-          </div>
-        </div>
-        <div className="gallery-grid">
-          <figure className="wide-figure">
-            <a href="/assets/recon-device.jpg" target="_blank">
-              <img src="/assets/recon-device.jpg" alt="Scientific diagram of DNA capture and release in a nanofluidic device" />
-            </a>
-            <figcaption>
-              <strong>Capture and release.</strong> Free DNA, field-induced confinement, and release after the field is removed.
-              <span>Credit: Science Advances (2025).</span>
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="/assets/recon-experiment.jpg" target="_blank">
-              <img src="/assets/recon-experiment.jpg" alt="Device cross-section and fluorescence microscopy images from the RECON experiment" />
-            </a>
-            <figcaption>
-              <strong>Device and fluorescence readout.</strong> Parallel electrodes, patterned nanowells, and confined DNA.
-              <span>Credit: Matheus Azevedo Silva Pessôa.</span>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section className="coverage-section ruled-section">
+      <section className="coverage-section ruled-section coverage-first">
         <div className="section-heading-row">
           <div>
             <p className="section-kicker">Selected coverage</p>
@@ -138,6 +56,26 @@ export default function MediaPage() {
             </li>
           ))}
         </ol>
+      </section>
+
+      <section className="media-explainer ruled-section">
+        <div>
+          <p className="section-kicker">RECON in brief</p>
+          <h2>A switchable landscape for DNA</h2>
+        </div>
+        <div>
+          <p>
+            A DNA molecule normally wanders through solution by Brownian motion.
+            In RECON, an applied AC field concentrates the molecule inside a
+            patterned nanowell. The field can be tuned continuously or turned
+            off entirely, allowing the same molecule to be captured, reshaped,
+            observed, and released.
+          </p>
+          <p>
+            The central idea is simple: confinement becomes a time-dependent
+            experimental variable rather than a permanent piece of geometry.
+          </p>
+        </div>
       </section>
 
       <section className="media-contact">

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SiteShell } from "@/components/site-shell";
 
 const selectedWork = [
@@ -25,6 +26,45 @@ const selectedWork = [
 export default function Home() {
   return (
     <SiteShell active="Home">
+      <section className="welcome-section">
+        <div className="welcome-copy">
+          <p className="section-kicker">Welcome</p>
+          <h2>Welcome to my website.</h2>
+          <p className="welcome-lede">
+            I&apos;m currently a PhD candidate at McGill University, working with
+            DNA electrokinetic confinement. This is a novel on-chip
+            single-molecule manipulation technique that I developed, recently
+            published in <em>Science Advances</em>. My interests are in
+            single-molecule manipulation and microscopy techniques.
+          </p>
+          <div className="welcome-links" aria-label="Biography links">
+            <a
+              href="https://drive.google.com/file/d/1yNnpHQnO6-QXI1WoeMcmy_E6zaQ2yhCq/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Complete CV <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              href="https://scholar.google.ca/citations?user=o5FQpCsAAAAJ&hl=pt-BR&oi=sra"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google Scholar <span aria-hidden="true">↗</span>
+            </a>
+            <a href="mailto:matheus.pessoa@mail.mcgill.ca">
+              matheus.pessoa@mail.mcgill.ca
+            </a>
+          </div>
+        </div>
+        <figure className="welcome-portrait">
+          <img
+            src="/assets/matheus-pessoa-portrait.jpg"
+            alt="Portrait of Matheus Pessôa"
+          />
+        </figure>
+      </section>
+
       <section className="home-hero">
         <div className="home-hero-copy">
           <p className="eyebrow">Experimental nanobiophysics</p>
@@ -39,7 +79,7 @@ export default function Home() {
             in Walter Reisner&apos;s Nanobiophysics Lab at McGill University.
           </p>
           <div className="text-links" aria-label="Profile links">
-            <a href="/research">Research overview <span aria-hidden="true">→</span></a>
+            <Link href="/research">Research overview <span aria-hidden="true">→</span></Link>
             <a href="https://scholar.google.ca/citations?hl=en&user=o5FQpCsAAAAJ" target="_blank" rel="noreferrer">
               Google Scholar <span aria-hidden="true">↗</span>
             </a>
@@ -49,15 +89,14 @@ export default function Home() {
           </div>
         </div>
 
-        <figure className="hero-figure">
+        <figure className="hero-figure schematic-figure">
           <img
-            src="/assets/recon-experiment.jpg"
-            alt="RECON device cross-section and fluorescence micrographs of DNA confined in nanocavities"
+            src="/assets/recon-schematic.png"
+            alt="Schematic of the RECON device with parallel electrodes, patterned nanocavities, and an applied electric field"
           />
           <figcaption>
-            Parallel-electrode nanofluidic device and fluorescence images of
-            DNA under reversible electrokinetic confinement.
-            <span>Science Advances, 2025.</span>
+            RECON device geometry. An applied AC bias localizes the electric
+            field at patterned cavities in the lower electrode.
           </figcaption>
         </figure>
       </section>
@@ -82,38 +121,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="motion-band ruled-section" aria-labelledby="research-in-motion">
-        <div className="section-heading-row">
-          <div>
-            <p className="section-kicker">Research in motion</p>
-            <h2 id="research-in-motion">Tuning tension molecule by molecule</h2>
-          </div>
-          <a className="inline-link" href="/media">
-            More microscopy <span aria-hidden="true">→</span>
-          </a>
-        </div>
-        <figure className="motion-figure motion-figure-wide">
-          <img
-            src="/assets/dna-tension-dynamics.gif"
-            alt="Animated fluorescence microscopy of T4-DNA confined between pairs of nanocavities under increasing applied tension"
-          />
-          <figcaption>
-            <strong>T4-DNA between two nanocavities.</strong> From left to right,
-            increasing current raises the applied tension and suppresses
-            fluctuations between the two wells.
-          </figcaption>
-        </figure>
-      </section>
-
       <section className="ruled-section">
         <div className="section-heading-row">
           <div>
             <p className="section-kicker">Selected publications</p>
             <h2>Recent work</h2>
           </div>
-          <a className="inline-link" href="/publications">
+          <Link className="inline-link" href="/publications">
             All publications <span aria-hidden="true">→</span>
-          </a>
+          </Link>
         </div>
         <ol className="publication-list compact">
           {selectedWork.map((work) => (

@@ -67,15 +67,9 @@ export default function ResearchPage() {
             <li>Stochastic transitions between nanocavities</li>
           </ul>
         </div>
-        <figure className="research-image motion-figure">
-          <img
-            src="/assets/stochastic-dna-transitions.gif"
-            alt="Animated fluorescence microscopy and plots showing DNA transitions between nanocavities under a stochastic voltage waveform"
-          />
-          <figcaption>
-            Stochastic driving produces transitions between neighboring
-            cavities while the DNA executes Brownian motion.
-          </figcaption>
+        <figure className="research-image">
+          <img src="/assets/recon-experiment.jpg" alt="Experimental fluorescence micrographs of DNA in nanocavities under reversible electrokinetic confinement" />
+          <figcaption>Single DNA molecules confined in lithographic cavities.</figcaption>
         </figure>
       </article>
 

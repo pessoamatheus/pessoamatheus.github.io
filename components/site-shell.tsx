@@ -1,16 +1,26 @@
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Research", href: "/research" },
   { label: "Publications", href: "/publications" },
+  { label: "Microscopy", href: "/microscopy" },
   { label: "Media", href: "/media" },
   { label: "About", href: "/about" },
 ];
 
-export function SiteShell({ active, children }: { active: string; children: ReactNode }) {
+export function SiteShell({
+  active,
+  children,
+  tone = "light",
+}: {
+  active: string;
+  children: ReactNode;
+  tone?: "light" | "dark";
+}) {
   return (
-    <div className="site-frame">
+    <div className={`site-frame${tone === "dark" ? " site-frame-dark" : ""}`}>
       <a className="skip-link" href="#main-content">Skip to content</a>
       <header className="site-header">
         <div className="institution-bar">
@@ -18,23 +28,23 @@ export function SiteShell({ active, children }: { active: string; children: Reac
           <span>Department of Physics</span>
         </div>
         <div className="masthead">
-          <a className="wordmark" href="/" aria-label="Matheus Pessôa, home">
+          <Link className="wordmark" href="/" aria-label="Matheus Pessôa, home">
             <span className="monogram" aria-hidden="true">MP</span>
             <span>
               <strong>Matheus Pessôa</strong>
               <small>Nanofluidics · Single-molecule biophysics</small>
             </span>
-          </a>
+          </Link>
           <nav aria-label="Primary navigation">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 aria-current={active === item.label ? "page" : undefined}
                 className={active === item.label ? "active" : undefined}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>

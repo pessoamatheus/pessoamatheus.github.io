@@ -7,7 +7,20 @@ export const metadata: Metadata = {
   description: "Selected publications and theses by Matheus Pessôa.",
 };
 
-const publications = [
+type PublicationEntry = {
+  title: string;
+  authors: string;
+  venue: string;
+  href?: string;
+  featured?: boolean;
+};
+
+type PublicationGroup = {
+  year: string;
+  entries: PublicationEntry[];
+};
+
+const publications: PublicationGroup[] = [
   {
     year: "2026",
     entries: [
@@ -125,8 +138,8 @@ export default function PublicationsPage() {
             <h2>{group.year}</h2>
             <ol>
               {group.entries.map((entry) => (
-                <li key={entry.title} className={("featured" in entry && entry.featured) ? "featured-publication" : undefined}>
-                  {("featured" in entry && entry.featured) && <span className="feature-label">Featured</span>}
+                <li key={entry.title} className={entry.featured ? "featured-publication" : undefined}>
+                  {entry.featured && <span className="feature-label">Featured</span>}
                   {entry.href ? (
                     <a href={entry.href} target="_blank" rel="noreferrer" className="publication-title">
                       {entry.title} <span aria-hidden="true">↗</span>
