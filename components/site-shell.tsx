@@ -5,7 +5,7 @@ const navItems = [
   { label: "Home", href: "/" },
   { label: "Research", href: "/research" },
   { label: "Publications", href: "/publications" },
-  { label: "Microscopy", href: "/microscopy" },
+  { label: "Experiments", href: "/experiments" },
   { label: "Media", href: "/media" },
   { label: "About", href: "/about" },
 ];
