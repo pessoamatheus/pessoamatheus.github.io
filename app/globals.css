@@ -156,59 +156,48 @@ nav a.active::after { background: var(--mit-red); }
   color: #f5f5f1;
 }
 .home-opening {
-  display: flex;
-  min-height: calc(100svh - 5px);
-  align-items: flex-end;
   width: min(calc(100% - 3rem), 1440px);
   margin-inline: auto;
-  padding: clamp(2.25rem, 6vw, 5.5rem) 0;
+  padding: clamp(3rem, 7vw, 6rem) 0 clamp(1.5rem, 3vw, 2.5rem);
 }
 .home-opening h1 {
-  max-width: 12ch;
   margin: 0;
   color: #f5f5f1;
-  font-size: clamp(4rem, 10vw, 9rem);
-  line-height: 0.88;
-  letter-spacing: -0.055em;
+  font-size: clamp(3.5rem, 8vw, 7.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.05em;
+}
+.home-opening p {
+  margin: 1.1rem 0 0;
+  color: #c9c9c4;
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(0.78rem, 1.2vw, 1rem);
+  letter-spacing: 0.025em;
 }
 .home-showcase {
   width: min(calc(100% - 3rem), 1440px);
   margin-inline: auto;
-  padding-bottom: clamp(3.5rem, 7vw, 7rem);
+  padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
 }
-.home-video-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.home-video-strip {
+  height: clamp(180px, 22vw, 310px);
+  overflow: hidden;
   border-top: 1px solid #3e3e3b;
-  border-left: 1px solid #3e3e3b;
-}
-.home-video-card {
-  margin: 0;
-  border-right: 1px solid #3e3e3b;
   border-bottom: 1px solid #3e3e3b;
 }
-.home-video-card video {
+.home-video-strip video {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: 100%;
   background: #000;
   object-fit: cover;
-}
-.home-video-card figcaption {
-  padding: 0.9rem 1rem 1rem;
-  color: #f5f5f1;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  object-position: 50% 0%;
 }
 .home-page-index {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 0;
-  margin-top: clamp(2.5rem, 6vw, 5rem);
-  border-top: 1px solid #6a6a65;
+  margin-top: 0;
   border-bottom: 1px solid #6a6a65;
 }
 .home-page-index a {
@@ -609,12 +598,21 @@ blockquote span { display: block; margin-bottom: 1.5rem; color: var(--mit-red); 
   .home-hero { padding-top: 3rem; }
   .home-opening,
   .home-showcase { width: min(calc(100% - 2rem), 1440px); }
-  .home-opening { min-height: calc(100svh - 5px); padding-bottom: 2.5rem; }
-  .home-opening h1 { font-size: clamp(3.5rem, 18vw, 5.6rem); }
-  .home-video-grid { grid-template-columns: 1fr; }
-  .home-page-index { grid-template-columns: 1fr; }
-  .home-page-index a { padding: 0.9rem 0.25rem; text-align: left; }
-  .home-page-index a + a { border-top: 1px solid #3e3e3b; border-left: 0; }
+  .home-opening { padding: 3rem 0 1.5rem; }
+  .home-opening h1 { font-size: clamp(3.2rem, 16vw, 5rem); }
+  .home-opening p { max-width: 34ch; line-height: 1.5; }
+  .home-video-strip { height: clamp(120px, 38vw, 175px); }
+  .home-page-index {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .home-page-index::-webkit-scrollbar { display: none; }
+  .home-page-index a {
+    flex: 0 0 auto;
+    padding: 0.8rem 0.7rem;
+    font-size: 0.75rem;
+  }
   .welcome-section { grid-template-columns: 1fr; gap: 2rem; }
   .welcome-portrait { max-width: 360px; }
   .home-hero h1 { font-size: clamp(3rem, 15vw, 4.3rem); }

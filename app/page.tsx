@@ -23,25 +23,6 @@ const selectedWork = [
   },
 ];
 
-const homeVideos = [
-  {
-    title: "Constant voltage",
-    src: "/assets/experiments/constant-voltage.mp4",
-  },
-  {
-    title: "Noise",
-    src: "/assets/experiments/noise-driven-confinement.mp4",
-  },
-  {
-    title: "Amplitude modulation",
-    src: "/assets/experiments/amplitude-modulation.mp4",
-  },
-  {
-    title: "Stochastic landscape",
-    src: "/assets/experiments/stochastic-potential-landscape.mp4",
-  },
-];
-
 const homeRoutes = [
   { label: "Research", href: "/research" },
   { label: "Publications", href: "/publications" },
@@ -59,19 +40,15 @@ export default function Home() {
         <div className="home-front">
           <header className="home-opening">
             <h1>Matheus Pessôa</h1>
+            <p>Reversible Electrokinetic Confinement of molecules on-chip</p>
           </header>
 
-          <section className="home-showcase" aria-label="Selected experiments">
-            <div className="home-video-grid">
-              {homeVideos.map((video) => (
-                <figure className="home-video-card" key={video.title}>
-                  <video autoPlay loop muted playsInline preload="metadata">
-                    <source src={video.src} type="video/mp4" />
-                    Your browser does not support embedded video.
-                  </video>
-                  <figcaption>{video.title}</figcaption>
-                </figure>
-              ))}
+          <section className="home-showcase" aria-label="Reversible electrokinetic confinement">
+            <div className="home-video-strip">
+              <video autoPlay loop muted playsInline preload="metadata">
+                <source src="/assets/microscopy/tension-increasing-voltage.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
             </div>
 
             <nav className="home-page-index" aria-label="Explore the website">
