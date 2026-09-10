@@ -23,45 +23,9 @@ const selectedWork = [
   },
 ];
 
-const homeRoutes = [
-  { label: "Research", href: "/research" },
-  { label: "Publications", href: "/publications" },
-  { label: "Experiments", href: "/experiments" },
-  { label: "Media", href: "/media" },
-  { label: "About", href: "/about" },
-];
-
 export default function Home() {
   return (
-    <SiteShell
-      active="Home"
-      showHeader={false}
-      prelude={
-        <div className="home-front">
-          <header className="home-opening">
-            <h1>Matheus Pessôa</h1>
-            <p>Reversible Electrokinetic Confinement of molecules on-chip</p>
-          </header>
-
-          <section className="home-showcase" aria-label="Reversible electrokinetic confinement">
-            <div className="home-video-strip">
-              <video autoPlay loop muted playsInline preload="metadata">
-                <source src="/assets/microscopy/tension-increasing-voltage.mp4" type="video/mp4" />
-                Your browser does not support embedded video.
-              </video>
-            </div>
-
-            <nav className="home-page-index" aria-label="Explore the website">
-              {homeRoutes.map((route) => (
-                <Link href={route.href} key={route.label}>
-                  {route.label}
-                </Link>
-              ))}
-            </nav>
-          </section>
-        </div>
-      }
-    >
+    <SiteShell active="Home">
       <section className="welcome-section" id="profile">
         <div className="welcome-copy">
           <p className="section-kicker">Welcome</p>
@@ -93,12 +57,20 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <figure className="welcome-portrait">
-          <img
-            src="/assets/matheus-pessoa-portrait.jpg"
-            alt="Portrait of Matheus Pessôa"
-          />
-        </figure>
+        <div className="welcome-media">
+          <figure className="welcome-portrait">
+            <img
+              src="/assets/matheus-pessoa-portrait.jpg"
+              alt="Portrait of Matheus Pessôa"
+            />
+          </figure>
+          <div className="welcome-video">
+            <video autoPlay loop muted playsInline preload="metadata">
+              <source src="/assets/microscopy/tension-increasing-voltage.mp4" type="video/mp4" />
+              Your browser does not support embedded video.
+            </video>
+          </div>
+        </div>
       </section>
 
       <section className="home-hero">

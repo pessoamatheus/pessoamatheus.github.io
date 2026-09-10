@@ -151,71 +151,6 @@ nav a.active::after { background: var(--mit-red); }
 
 .site-main { padding-bottom: 5rem; }
 
-.home-front {
-  background: #030303;
-  color: #f5f5f1;
-}
-.home-opening {
-  width: min(calc(100% - 3rem), 1440px);
-  margin-inline: auto;
-  padding: clamp(3rem, 7vw, 6rem) 0 clamp(1.5rem, 3vw, 2.5rem);
-}
-.home-opening h1 {
-  margin: 0;
-  color: #f5f5f1;
-  font-size: clamp(3.5rem, 8vw, 7.5rem);
-  line-height: 0.92;
-  letter-spacing: -0.05em;
-}
-.home-opening p {
-  margin: 1.1rem 0 0;
-  color: #c9c9c4;
-  font-family: "Courier New", Courier, monospace;
-  font-size: clamp(0.78rem, 1.2vw, 1rem);
-  letter-spacing: 0.025em;
-}
-.home-showcase {
-  width: min(calc(100% - 3rem), 1440px);
-  margin-inline: auto;
-  padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
-}
-.home-video-strip {
-  height: clamp(180px, 22vw, 310px);
-  overflow: hidden;
-  border-top: 1px solid #3e3e3b;
-  border-bottom: 1px solid #3e3e3b;
-}
-.home-video-strip video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  object-fit: cover;
-  object-position: 50% 0%;
-}
-.home-page-index {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 0;
-  margin-top: 0;
-  border-bottom: 1px solid #6a6a65;
-}
-.home-page-index a {
-  padding: 1.1rem 0.75rem;
-  color: #f5f5f1;
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-}
-.home-page-index a + a { border-left: 1px solid #3e3e3b; }
-.home-page-index a::after { display: none; }
-.home-page-index a:hover,
-.home-page-index a:focus-visible {
-  background: #f5f5f1;
-  color: #111;
-}
-
 .welcome-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(250px, 360px);
@@ -249,6 +184,11 @@ nav a.active::after { background: var(--mit-red); }
   font-size: 0.86rem;
   font-weight: 700;
 }
+.welcome-media {
+  display: grid;
+  gap: 1rem;
+  align-self: center;
+}
 .welcome-portrait {
   margin: 0;
   border-top: 4px solid var(--mit-red);
@@ -257,6 +197,18 @@ nav a.active::after { background: var(--mit-red); }
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: 52% center;
+}
+.welcome-video {
+  overflow: hidden;
+  border-top: 2px solid var(--mit-red);
+}
+.welcome-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  object-fit: cover;
+  object-position: 50% 0%;
 }
 .home-hero {
   display: grid;
@@ -596,25 +548,8 @@ blockquote span { display: block; margin-bottom: 1.5rem; color: var(--mit-red); 
   nav a { flex: 0 0 auto; font-size: 0.84rem; }
   nav a::after { bottom: -0.95rem; }
   .home-hero { padding-top: 3rem; }
-  .home-opening,
-  .home-showcase { width: min(calc(100% - 2rem), 1440px); }
-  .home-opening { padding: 3rem 0 1.5rem; }
-  .home-opening h1 { font-size: clamp(3.2rem, 16vw, 5rem); }
-  .home-opening p { max-width: 34ch; line-height: 1.5; }
-  .home-video-strip { height: clamp(120px, 38vw, 175px); }
-  .home-page-index {
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-  .home-page-index::-webkit-scrollbar { display: none; }
-  .home-page-index a {
-    flex: 0 0 auto;
-    padding: 0.8rem 0.7rem;
-    font-size: 0.75rem;
-  }
   .welcome-section { grid-template-columns: 1fr; gap: 2rem; }
-  .welcome-portrait { max-width: 360px; }
+  .welcome-media { width: 100%; max-width: 360px; }
   .home-hero h1 { font-size: clamp(3rem, 15vw, 4.3rem); }
   .home-grid,
   .media-explainer,
