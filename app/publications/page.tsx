@@ -32,8 +32,18 @@ const publications: PublicationGroup[] = [
       },
       {
         title: "Electrokinetic active grooves for liposome capture, confinement, trajectory analysis and controlled release",
-        authors: "P. Ravikumar, M. A. S. Pessôa, et al.",
-        venue: "Manuscript under review",
+        authors: "P. Ravikumar, M. A. S. Pessôa*, et al. (* co-first author)",
+        venue: "Accepted at Biomicrofluidics",
+      },
+      {
+        title: "Programmable Confinement Landscapes for Single-Molecule Control in Nanofluidic Systems: From Static Nanotopographies to Reversible Electrokinetic Trapping",
+        authors: " M. A. S. Pessôa, Walter Reisner",
+        venue: "In preparation",
+      },
+      {
+        title: "Non-equilibrium cyclic conformations of DNA under electrokinetic confinement",
+        authors: "M. A. S. Pessôa, Walter Reisner",
+        venue: "In preparation",
       },
     ],
   },
