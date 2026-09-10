@@ -184,11 +184,6 @@ nav a.active::after { background: var(--mit-red); }
   font-size: 0.86rem;
   font-weight: 700;
 }
-.welcome-media {
-  display: grid;
-  gap: 1rem;
-  align-self: center;
-}
 .welcome-portrait {
   margin: 0;
   border-top: 4px solid var(--mit-red);
@@ -198,11 +193,12 @@ nav a.active::after { background: var(--mit-red); }
   object-fit: cover;
   object-position: 52% center;
 }
-.welcome-video {
+.home-research-video {
+  margin-top: 2rem;
   overflow: hidden;
   border-top: 2px solid var(--mit-red);
 }
-.welcome-video video {
+.home-research-video video {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -549,7 +545,7 @@ blockquote span { display: block; margin-bottom: 1.5rem; color: var(--mit-red); 
   nav a::after { bottom: -0.95rem; }
   .home-hero { padding-top: 3rem; }
   .welcome-section { grid-template-columns: 1fr; gap: 2rem; }
-  .welcome-media { width: 100%; max-width: 360px; }
+  .welcome-portrait { max-width: 360px; }
   .home-hero h1 { font-size: clamp(3rem, 15vw, 4.3rem); }
   .home-grid,
   .media-explainer,

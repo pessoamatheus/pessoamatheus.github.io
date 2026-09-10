@@ -57,20 +57,12 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="welcome-media">
-          <figure className="welcome-portrait">
-            <img
-              src="/assets/matheus-pessoa-portrait.jpg"
-              alt="Portrait of Matheus Pessôa"
-            />
-          </figure>
-          <div className="welcome-video">
-            <video autoPlay loop muted playsInline preload="metadata">
-              <source src="/assets/microscopy/tension-increasing-voltage.mp4" type="video/mp4" />
-              Your browser does not support embedded video.
-            </video>
-          </div>
-        </div>
+        <figure className="welcome-portrait">
+          <img
+            src="/assets/matheus-pessoa-portrait.jpg"
+            alt="Portrait of Matheus Pessôa"
+          />
+        </figure>
       </section>
 
       <section className="home-hero">
@@ -113,6 +105,12 @@ export default function Home() {
         <div>
           <p className="section-kicker">Current research</p>
           <h2>Dynamic molecular control on chip</h2>
+          <div className="home-research-video">
+            <video autoPlay loop muted playsInline preload="metadata">
+              <source src="/assets/microscopy/tension-increasing-voltage.mp4" type="video/mp4" />
+              Your browser does not support embedded video.
+            </video>
+          </div>
         </div>
         <div className="prose-column">
           <p>
