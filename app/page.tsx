@@ -71,6 +71,38 @@ export default function Home() {
         </figure>
       </section>
 
+      <section className="news-section ruled-section" id="news" aria-labelledby="news-heading">
+        <div className="section-heading-row">
+          <div>
+            <p className="section-kicker">Updates</p>
+            <h2 id="news-heading">Latest news</h2>
+          </div>
+        </div>
+        <ol className="news-list">
+          <li>
+            <time dateTime="2026-05">May 2026</time>
+            <div>
+              <h3>RECON poster presented in Winnipeg</h3>
+              <p>Presented a poster on Reversible Electrokinetic Confinement at the Biophysical Society of Canada meeting.</p>
+            </div>
+          </li>
+          <li>
+            <time dateTime="2026-05">May 2026</time>
+            <div>
+              <h3>Biophysical Society of Canada Travel Award</h3>
+              <p>Received a Travel Award from the Biophysical Society of Canada.</p>
+            </div>
+          </li>
+          <li>
+            <time dateTime="2026-01">January 2026</time>
+            <div>
+              <h3>Talk at S3IC in Rome</h3>
+              <p>Presented a talk at Single-Molecule Sensors and NanoSystems (S3IC).</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
       <section className="ruled-section home-cv" aria-labelledby="short-cv-heading">
         <div className="section-heading-row">
           <div>

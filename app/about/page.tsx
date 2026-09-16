@@ -24,7 +24,7 @@ export default function AboutPage() {
           </address>
           <a href="mailto:matheus.pessoa@mail.mcgill.ca">matheus.pessoa@mail.mcgill.ca</a>
           <div className="stacked-links">
-            <a href="https://drive.google.com/file/d/1yNnpHQnO6-QXI1WoeMcmy_E6zaQ2yhCq/view?usp=sharing" target="_blank" rel="noreferrer">Curriculum vitae <span aria-hidden="true">↗</span></a>
+            <a href="/assets/fullcv-matheuspessoa.pdf" target="_blank" rel="noreferrer">Curriculum vitae <span aria-hidden="true">↗</span></a>
             <a href="https://scholar.google.ca/citations?hl=en&user=o5FQpCsAAAAJ" target="_blank" rel="noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
             <a href="https://orcid.org/0000-0003-3733-3127" target="_blank" rel="noreferrer">ORCID <span aria-hidden="true">↗</span></a>
           </div>
