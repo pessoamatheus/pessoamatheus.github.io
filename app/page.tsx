@@ -5,6 +5,7 @@ const selectedWork = [
   {
     year: "2025",
     journal: "Science Advances",
+    featured: true,
     title:
       "Single-molecule capture, release, and dynamical manipulation via reversible electrokinetic confinement (RECON)",
     href: "https://www.science.org/doi/10.1126/sciadv.adv8863",
@@ -12,12 +13,14 @@ const selectedWork = [
   {
     year: "2026",
     journal: "Macromolecules",
+    featured: false,
     title: "DNA Dynamics in Dual-Nanopore Tug-of-War",
     href: "https://pubs.acs.org/doi/10.1021/acs.macromol.5c02380",
   },
   {
     year: "2024",
     journal: "Nanoscale",
+    featured: false,
     title: "Tunable nanofluidic device for digital nucleic acid analysis",
     href: "https://pubs.rsc.org/en/content/articlelanding/2024/nr/d3nr05553a",
   },
@@ -31,15 +34,18 @@ export default function Home() {
           <p className="section-kicker">Welcome</p>
           <h2>Matheus Pessôa</h2>
           <p className="welcome-lede">
-            I&apos;m currently a PhD candidate at McGill University, working with
-            DNA electrokinetic confinement. This is a novel on-chip
-            single-molecule manipulation technique that I developed, recently
-            published in <em>Science Advances</em>. My interests are in
-            single-molecule manipulation and microscopy techniques.
+            I&apos;m currently a PhD candidate at McGill University, where my
+            research combines nanofluidic devices, electric fields, and
+            single-molecule fluorescence microscopy to study and control DNA
+            dynamics. I developed Reversible Electrokinetic Confinement
+            (RECON), an on-chip technique that uses electrically tunable
+            nanocavities to capture, confine, release, and dynamically
+            manipulate individual DNA molecules. This work was recently
+            published in <em>Science Advances</em>.
           </p>
           <div className="welcome-links" aria-label="Biography links">
             <a
-              href="https://drive.google.com/file/d/1yNnpHQnO6-QXI1WoeMcmy_E6zaQ2yhCq/view?usp=sharing"
+              href="/assets/fullcv-matheuspessoa.pdf"
               target="_blank"
               rel="noreferrer"
             >
@@ -63,6 +69,96 @@ export default function Home() {
             alt="Portrait of Matheus Pessôa"
           />
         </figure>
+      </section>
+
+      <section className="ruled-section home-cv" aria-labelledby="short-cv-heading">
+        <div className="section-heading-row">
+          <div>
+            <p className="section-kicker">Curriculum vitae</p>
+            <h2 id="short-cv-heading">Selected background</h2>
+          </div>
+          <a
+            className="inline-link"
+            href="/assets/fullcv-matheuspessoa.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Complete CV <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div className="home-cv-grid">
+          <article className="home-cv-column">
+            <h3>Education</h3>
+            <ol className="home-cv-list">
+              <li>
+                <span>2021–Present</span>
+                <div>
+                  <strong>Ph.D. in Physics</strong>
+                  <small>McGill University · Nanobiophysics Laboratory</small>
+                </div>
+              </li>
+              <li>
+                <span>2019–2021</span>
+                <div>
+                  <strong>M.Sc. in Physics</strong>
+                  <small>McGill University · Experimental Cosmology Laboratory</small>
+                </div>
+              </li>
+              <li>
+                <span>2015–2019</span>
+                <div>
+                  <strong>B.Sc. in Physics</strong>
+                  <small>Federal University of ABC</small>
+                </div>
+              </li>
+            </ol>
+          </article>
+
+          <article className="home-cv-column">
+            <h3>Teaching &amp; leadership</h3>
+            <ol className="home-cv-list">
+              <li>
+                <span>2020–2026</span>
+                <div>
+                  <strong>Teaching Assistant Training in Physics</strong>
+                  <small>Developer and lead facilitator</small>
+                </div>
+              </li>
+              <li>
+                <span>2020–2026</span>
+                <div>
+                  <strong>Physics Education Research Group</strong>
+                  <small>Leader</small>
+                </div>
+              </li>
+              <li>
+                <span>2021–2026</span>
+                <div>
+                  <strong>Undergraduate Research Showcase</strong>
+                  <small>Organizer</small>
+                </div>
+              </li>
+              <li>
+                <span>2021–Present</span>
+                <div>
+                  <strong>Canadian International Physicists&apos; Tournament</strong>
+                  <small>Founder and national representative</small>
+                </div>
+              </li>
+            </ol>
+          </article>
+
+          <article className="home-cv-column">
+            <h3>Selected highlights</h3>
+            <ul className="home-cv-highlights">
+              <li>FRQNT Doctoral Scholarship, 2022–2026</li>
+              <li>Best Poster Award, Methods and Applications in Fluorescence, 2025</li>
+              <li>Lead author of the RECON study in <em>Science Advances</em>, 2025</li>
+              <li>Patent application for electrokinetic manipulation of macromolecules</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <section className="home-hero">
@@ -142,6 +238,7 @@ export default function Home() {
             <li key={work.title}>
               <span className="pub-year">{work.year}</span>
               <div>
+                {work.featured && <span className="feature-label">Featured</span>}
                 <a href={work.href} target="_blank" rel="noreferrer" className="publication-title">
                   {work.title} <span aria-hidden="true">↗</span>
                 </a>
