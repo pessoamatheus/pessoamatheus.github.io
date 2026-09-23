@@ -628,7 +628,7 @@ blockquote span { display: block; margin-bottom: 1.5rem; color: var(--mit-red); 
   nav { gap: 0 1rem; overflow-x: auto; justify-content: flex-start; padding-bottom: 0.1rem; scrollbar-width: none; }
   nav::-webkit-scrollbar { display: none; }
   nav a { flex: 0 0 auto; font-size: 0.84rem; }
-  nav a::after { bottom: -0.95rem; }
+  nav a::after { display: none; }
   .home-hero { padding-top: 3rem; }
   .welcome-section { grid-template-columns: 1fr; gap: 2rem; }
   .welcome-portrait { max-width: 360px; }
