@@ -47,6 +47,87 @@ export default function ExperimentsPage() {
         <div className="microscopy-copy">
           <p className="microscopy-number">01</p>
           <div>
+            <p className="microscopy-kind">Single-molecule shape dynamics</p>
+            <h2>Confined λ-DNA shapes</h2>
+            <p>
+              Fluorescence microscopy tracks individual λ-DNA molecules as
+              their cavity-confined conformations respond to different
+              electrical inputs. The first comparison places constant voltage,
+              stochastic noise, and 1 Hz amplitude modulation side by side; the
+              second follows one molecule using tensor-derived major and minor
+              dimensions.
+            </p>
+          </div>
+        </div>
+
+        <figure className="microscopy-figure microscopy-video-figure">
+          <video
+            autoPlay
+            controls
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            style={{ aspectRatio: "8 / 5" }}
+            aria-label="Comparison of confined DNA under constant voltage, noise, and amplitude modulation"
+          >
+            <source
+              src="/assets/experiments/voltage-protocol-comparison.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support embedded video.
+          </video>
+          <figcaption>
+            Comparison of confined λ-DNA shape dynamics under constant voltage,
+            stochastic noise, and 1 Hz amplitude modulation.
+          </figcaption>
+        </figure>
+
+        <figure
+          className="microscopy-figure microscopy-video-figure"
+          style={{ marginTop: "clamp(2rem, 5vw, 4rem)" }}
+        >
+          <video
+            autoPlay
+            controls
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            style={{ aspectRatio: "22 / 15" }}
+            aria-label="Tensor analysis of a confined DNA molecule"
+          >
+            <source
+              src="/assets/experiments/confined-dna-shape-analysis.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support embedded video.
+          </video>
+          <figcaption>
+            Single-molecule fluorescence recording with the major and minor
+            tensor axes, normalized shape trajectory, and time-resolved R_M and
+            R_m dimensions.
+          </figcaption>
+        </figure>
+
+        <figure
+          className="microscopy-figure conformation-figure"
+          style={{ marginTop: "clamp(2rem, 5vw, 4rem)" }}
+        >
+          <img
+            src="/assets/microscopy/lambda-dna-conformations.png"
+            alt="Montage of many fluorescence microscopy images showing different confined lambda-DNA conformations"
+          />
+          <figcaption>
+            Representative λ-DNA conformations measured in nanocavities.
+          </figcaption>
+        </figure>
+      </article>
+
+      <article className="microscopy-entry">
+        <div className="microscopy-copy">
+          <p className="microscopy-number">02</p>
+          <div>
             <p className="microscopy-kind">Dynamic confinement</p>
             <h2>Electrical drive protocols</h2>
             <p>
@@ -82,7 +163,7 @@ export default function ExperimentsPage() {
 
       <article className="microscopy-entry">
         <div className="microscopy-copy">
-          <p className="microscopy-number">02</p>
+          <p className="microscopy-number">03</p>
           <div>
             <p className="microscopy-kind">Voltage-dependent response</p>
             <h2>Increasing molecular tension</h2>
@@ -116,9 +197,9 @@ export default function ExperimentsPage() {
         </figure>
       </article>
 
-      <article className="microscopy-entry">
+      <article className="microscopy-entry microscopy-entry-last">
         <div className="microscopy-copy">
-          <p className="microscopy-number">03</p>
+          <p className="microscopy-number">04</p>
           <div>
             <p className="microscopy-kind">Electron microscopy</p>
             <h2>Nanofabricated cavity arrays</h2>
@@ -137,30 +218,6 @@ export default function ExperimentsPage() {
           <figcaption>
             Nanocavity arrays at multiple magnifications, from a single cavity
             to the extended patterned surface.
-          </figcaption>
-        </figure>
-      </article>
-
-      <article className="microscopy-entry microscopy-entry-last">
-        <div className="microscopy-copy">
-          <p className="microscopy-number">04</p>
-          <div>
-            <p className="microscopy-kind">Conformation library</p>
-            <h2>Confined λ-DNA shapes</h2>
-            <p>
-              Individual λ-DNA molecules adopt a broad range of compact and
-              anisotropic conformations under cavity confinement. This montage
-              shows representative single-molecule observations.
-            </p>
-          </div>
-        </div>
-        <figure className="microscopy-figure conformation-figure">
-          <img
-            src="/assets/microscopy/lambda-dna-conformations.png"
-            alt="Montage of many fluorescence microscopy images showing different confined lambda-DNA conformations"
-          />
-          <figcaption>
-            Representative λ-DNA conformations measured in nanocavities.
           </figcaption>
         </figure>
       </article>
