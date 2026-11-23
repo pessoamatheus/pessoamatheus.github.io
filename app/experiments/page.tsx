@@ -4,7 +4,7 @@ import { SiteShell } from "@/components/site-shell";
 export const metadata: Metadata = {
   title: "Experiments",
   description:
-    "Fluorescence microscopy experiments, driven confinement protocols, and nanofabrication images from Matheus Pessôa's single-molecule nanofluidics research.",
+    "Fluorescence microscopy experiments, driven confinement protocols, and nanofabrication images from Matheus Pessôa, Ph.D.",
 };
 
 const driveProtocols = [

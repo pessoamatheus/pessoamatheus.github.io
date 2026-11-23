@@ -4,7 +4,7 @@ import { SiteShell } from "@/components/site-shell";
 
 export const metadata: Metadata = {
   title: "Publications",
-  description: "Selected publications and theses by Matheus Pessôa.",
+  description: "Selected publications and theses by Matheus Pessôa, Ph.D.",
 };
 
 type PublicationEntry = {
@@ -31,19 +31,22 @@ const publications: PublicationGroup[] = [
         href: "https://pubs.acs.org/doi/10.1021/acs.macromol.5c02380",
       },
       {
-        title: "Electrokinetic active grooves for liposome capture, confinement, trajectory analysis and controlled release",
-        authors: "P. Ravikumar, M. A. S. Pessôa*, et al. (* co-first author)",
-        venue: "Accepted at Biomicrofluidics",
+        title: "Electrokinetic active grooves for liposome capture, confinement, trajectory analysis, and controlled release",
+        authors: "P. Ravikumar, M. A. S. Pessôa*, S. Shiekh, Z. Liu, R. Sladek, W. Reisner (* co-first author)",
+        venue: "Biomicrofluidics 20 (6), 064101",
+        href: "https://pubs.aip.org/aip/bmf/article-abstract/20/6/064101/3407902/Electrokinetic-active-grooves-for-liposome-capture?redirectedFrom=PDF",
       },
       {
-        title: "Programmable Confinement Landscapes for Single-Molecule Control in Nanofluidic Systems: From Static Nanotopographies to Reversible Electrokinetic Trapping",
-        authors: " M. A. S. Pessôa, Walter Reisner",
-        venue: "In preparation",
+        title: "Programmable Nanofluidic Confinement: From Static Nanotopographies to Reversible Electrokinetic Trapping",
+        authors: "M. A. S. Pessôa, W. Reisner",
+        venue: "ChemRxiv, 10.26434/chemrxiv.15012415/v2",
+        href: "https://doi.org/10.26434/chemrxiv.15012415/v2",
       },
       {
         title: "Non-equilibrium cyclic conformations of DNA under electrokinetic confinement",
-        authors: "M. A. S. Pessôa, Walter Reisner",
-        venue: "In preparation",
+        authors: "M. A. S. Pessôa, W. Reisner",
+        venue: "bioRxiv, 10.64898/2026.11.03.764104",
+        href: "https://www.biorxiv.org/content/10.64898/2026.11.03.764104v1",
       },
     ],
   },
@@ -137,7 +140,7 @@ export default function PublicationsPage() {
       </PageIntro>
 
       <div className="profile-link-bar">
-        <a href="https://scholar.google.ca/citations?hl=en&user=o5FQpCsAAAAJ" target="_blank" rel="noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+        <a href="https://scholar.google.com/citations?user=o5FQpCsAAAAJ&hl=pt-BR" target="_blank" rel="noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
         <a href="https://orcid.org/0000-0003-3733-3127" target="_blank" rel="noreferrer">ORCID <span aria-hidden="true">↗</span></a>
         <a href="/assets/fullcv-matheuspessoa.pdf" target="_blank" rel="noreferrer">Curriculum vitae <span aria-hidden="true">↗</span></a>
       </div>

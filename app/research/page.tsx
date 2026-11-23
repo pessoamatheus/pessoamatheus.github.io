@@ -4,7 +4,7 @@ import { SiteShell } from "@/components/site-shell";
 
 export const metadata: Metadata = {
   title: "Research",
-  description: "Research by Matheus Pessôa in nanofluidics, electrokinetic confinement, and driven single-molecule dynamics.",
+  description: "Research by Matheus Pessôa, Ph.D., in nanofluidics, electrokinetic confinement, and driven single-molecule dynamics.",
 };
 
 export default function ResearchPage() {

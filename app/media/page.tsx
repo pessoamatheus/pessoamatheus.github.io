@@ -4,7 +4,7 @@ import { SiteShell } from "@/components/site-shell";
 
 export const metadata: Metadata = {
   title: "Media",
-  description: "Research images, explanations, and media coverage of Matheus Pessôa's work.",
+  description: "Research images, explanations, and media coverage of Matheus Pessôa, Ph.D.",
 };
 
 const coverage = [

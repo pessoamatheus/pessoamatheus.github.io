@@ -3,11 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Matheus Pessôa — Nanofluidics & Single-Molecule Biophysics",
-    template: "%s — Matheus Pessôa",
+    default: "Matheus Pessôa, Ph.D. — Nanofluidics & Single-Molecule Biophysics",
+    template: "%s — Matheus Pessôa, Ph.D.",
   },
   description:
-    "Research website of Matheus Pessôa, a physicist working on nanofluidics, single-molecule biophysics, and reversible electrokinetic confinement.",
+    "Research website of Matheus Pessôa, Ph.D., an experimental physicist working on nanofluidics, single-molecule biophysics, and reversible electrokinetic confinement.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

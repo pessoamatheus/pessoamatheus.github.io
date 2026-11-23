@@ -1,4 +1,4 @@
-# Matheus Pessôa — Academic Research Website
+# Matheus Pessôa, Ph.D. — Academic Research Website
 
 GitHub Pages source for <https://pessoamatheus.github.io>.
 

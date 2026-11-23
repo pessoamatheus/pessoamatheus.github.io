@@ -29,10 +29,10 @@ export function SiteShell({
           <span>Department of Physics</span>
         </div>
         <div className="masthead">
-          <Link className="wordmark" href="/" aria-label="Matheus Pessôa, home">
+          <Link className="wordmark" href="/" aria-label="Matheus Pessôa, Ph.D., home">
             <span className="monogram" aria-hidden="true">MP</span>
             <span>
-              <strong>Matheus Pessôa</strong>
+              <strong>Matheus Pessôa, Ph.D.</strong>
               <small>Nanofluidics · Single-molecule biophysics</small>
             </span>
           </Link>
@@ -55,12 +55,12 @@ export function SiteShell({
 
       <footer className="site-footer">
         <div>
-          <strong>Matheus Azevedo Silva Pessôa</strong>
-          <span>PhD Candidate in Physics · McGill University</span>
+          <strong>Matheus Pessôa, Ph.D.</strong>
+          <span>Experimental physicist · Nanofluidics and single-molecule biophysics</span>
         </div>
         <div className="footer-links">
           <a href="mailto:matheus.pessoa@mail.mcgill.ca">Email</a>
-          <a href="https://scholar.google.ca/citations?hl=en&user=o5FQpCsAAAAJ" target="_blank" rel="noreferrer">Scholar</a>
+          <a href="https://scholar.google.com/citations?user=o5FQpCsAAAAJ&hl=pt-BR" target="_blank" rel="noreferrer">Scholar</a>
           <a href="https://orcid.org/0000-0003-3733-3127" target="_blank" rel="noreferrer">ORCID</a>
         </div>
       </footer>

@@ -12,19 +12,35 @@ const selectedWork = [
   },
   {
     year: "2026",
+    journal: "bioRxiv",
+    featured: false,
+    title: "Non-equilibrium cyclic conformations of DNA under electrokinetic confinement",
+    href: "https://www.biorxiv.org/content/10.64898/2026.11.03.764104v1",
+  },
+  {
+    year: "2026",
+    journal: "ChemRxiv",
+    featured: false,
+    title:
+      "Programmable Nanofluidic Confinement: From Static Nanotopographies to Reversible Electrokinetic Trapping",
+    href: "https://doi.org/10.26434/chemrxiv.15012415/v2",
+  },
+  {
+    year: "2026",
+    journal: "Biomicrofluidics",
+    featured: false,
+    title:
+      "Electrokinetic active grooves for liposome capture, confinement, trajectory analysis, and controlled release",
+    href: "https://pubs.aip.org/aip/bmf/article-abstract/20/6/064101/3407902/Electrokinetic-active-grooves-for-liposome-capture?redirectedFrom=PDF",
+  },
+  {
+    year: "2026",
     journal: "Macromolecules",
     featured: false,
     title: "DNA Dynamics in Dual-Nanopore Tug-of-War",
     href: "https://pubs.acs.org/doi/10.1021/acs.macromol.5c02380",
   },
-  {
-    year: "2024",
-    journal: "Nanoscale",
-    featured: false,
-    title: "Tunable nanofluidic device for digital nucleic acid analysis",
-    href: "https://pubs.rsc.org/en/content/articlelanding/2024/nr/d3nr05553a",
-  },
-];
+]
 
 export default function Home() {
   return (
@@ -32,16 +48,16 @@ export default function Home() {
       <section className="welcome-section" id="profile">
         <div className="welcome-copy">
           <p className="section-kicker">Welcome</p>
-          <h2>Matheus Pessôa</h2>
+          <h2>Matheus Pessôa, Ph.D.</h2>
           <p className="welcome-lede">
-            I&apos;m currently a PhD candidate at McGill University, where my
-            research combines nanofluidic devices, electric fields, and
-            single-molecule fluorescence microscopy to study and control DNA
-            dynamics. I developed Reversible Electrokinetic Confinement
+            I recently completed my Ph.D. in Physics at McGill University, where my
+            doctoral research combined nanofluidic devices, electric fields,
+            and single-molecule fluorescence microscopy to study and control
+            DNA dynamics. I developed Reversible Electrokinetic Confinement
             (RECON), an on-chip technique that uses electrically tunable
             nanocavities to capture, confine, release, and dynamically
-            manipulate individual DNA molecules. This work was recently
-            published in <em>Science Advances</em>.
+            manipulate individual DNA molecules. This work was published in
+            <em>Science Advances</em>.
           </p>
           <div className="welcome-links" aria-label="Biography links">
             <a
@@ -52,7 +68,7 @@ export default function Home() {
               Complete CV <span aria-hidden="true">↗</span>
             </a>
             <a
-              href="https://scholar.google.ca/citations?user=o5FQpCsAAAAJ&hl=pt-BR&oi=sra"
+              href="https://scholar.google.com/citations?user=o5FQpCsAAAAJ&hl=pt-BR"
               target="_blank"
               rel="noreferrer"
             >
@@ -79,6 +95,13 @@ export default function Home() {
           </div>
         </div>
         <ol className="news-list">
+          <li>
+            <time dateTime="2026-10-19">October 19, 2026</time>
+            <div>
+              <h3>Defended my Ph.D. on October 19th!</h3>
+              <p>Successfully defended my Ph.D. in Physics at McGill University.</p>
+            </div>
+          </li>
           <li>
             <time dateTime="2026-05">May 2026</time>
             <div>
@@ -124,7 +147,7 @@ export default function Home() {
             <h3>Education</h3>
             <ol className="home-cv-list">
               <li>
-                <span>2021–Present</span>
+                <span>2021–2026</span>
                 <div>
                   <strong>Ph.D. in Physics</strong>
                   <small>McGill University · Nanobiophysics Laboratory</small>
@@ -203,12 +226,12 @@ export default function Home() {
           </p>
           <p className="hero-body">
             My research sits at the intersection of soft matter physics,
-            nanofluidics, and single-molecule biophysics. I am a PhD candidate
+            nanofluidics, and single-molecule biophysics. I completed my Ph.D.
             in Walter Reisner&apos;s Nanobiophysics Lab at McGill University.
           </p>
           <div className="text-links" aria-label="Profile links">
             <Link href="/research">Research overview <span aria-hidden="true">→</span></Link>
-            <a href="https://scholar.google.ca/citations?hl=en&user=o5FQpCsAAAAJ" target="_blank" rel="noreferrer">
+            <a href="https://scholar.google.com/citations?user=o5FQpCsAAAAJ&hl=pt-BR" target="_blank" rel="noreferrer">
               Google Scholar <span aria-hidden="true">↗</span>
             </a>
             <a href="https://orcid.org/0000-0003-3733-3127" target="_blank" rel="noreferrer">
@@ -284,9 +307,9 @@ export default function Home() {
       <section className="note-band" aria-label="Current position">
         <p className="section-kicker">Current</p>
         <p>
-          Completing a PhD in Physics at McGill University and exploring
-          postdoctoral research opportunities in single-molecule biophysics,
-          nanofluidics, and molecular instrumentation.
+          Recently completed a Ph.D. in Physics at McGill University, specializing
+          in single-molecule biophysics, nanofluidics, and molecular
+          instrumentation.
         </p>
         <a href="mailto:matheus.pessoa@mail.mcgill.ca">Get in touch <span aria-hidden="true">→</span></a>
       </section>

@@ -4,7 +4,7 @@ import { SiteShell } from "@/components/site-shell";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Biography, academic background, and contact information for Matheus Pessôa.",
+  description: "Biography, academic background, and contact information for Matheus Pessôa, Ph.D.",
 };
 
 export default function AboutPage() {
@@ -25,15 +25,16 @@ export default function AboutPage() {
           <a href="mailto:matheus.pessoa@mail.mcgill.ca">matheus.pessoa@mail.mcgill.ca</a>
           <div className="stacked-links">
             <a href="/assets/fullcv-matheuspessoa.pdf" target="_blank" rel="noreferrer">Curriculum vitae <span aria-hidden="true">↗</span></a>
-            <a href="https://scholar.google.ca/citations?hl=en&user=o5FQpCsAAAAJ" target="_blank" rel="noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+            <a href="https://scholar.google.com/citations?user=o5FQpCsAAAAJ&hl=pt-BR" target="_blank" rel="noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
             <a href="https://orcid.org/0000-0003-3733-3127" target="_blank" rel="noreferrer">ORCID <span aria-hidden="true">↗</span></a>
           </div>
         </aside>
 
         <div className="about-bio">
           <p className="bio-lede">
-            I am a PhD candidate in Physics at McGill University, working with
-            Walter Reisner in the Nanobiophysics Lab.
+            I am an experimental physicist specializing in nanofluidics and
+            single-molecule biophysics. I completed my Ph.D. in Physics at
+            McGill University with Walter Reisner in the Nanobiophysics Lab.
           </p>
           <p>
             My doctoral research concerns electrokinetic confinement and the
@@ -65,7 +66,7 @@ export default function AboutPage() {
         </div>
         <ol className="timeline">
           <li>
-            <span>2021—present</span>
+            <span>2021—2026</span>
             <div>
               <h3>PhD in Physics · McGill University</h3>
               <p>Nanobiophysics and electrokinetic confinement of single DNA molecules. Supervisor: Walter Reisner.</p>
